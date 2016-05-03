@@ -385,6 +385,16 @@ section.project {
   section.project#zero-gravity .container--brand-color {
     background-color: #FDEAEA; }
 
+@font-face {
+  font-family: 'Chivo';
+  src: url("../assets/fonts/Chivo-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Chivo';
+  src: url("../assets/fonts/Chivo-Bold.otf");
+  font-weight: bold;
+  font-style: normal; }
 body {
   font-family: "Chivo", Helvetica, Arial, sans-serif;
   font-size: 16px;
