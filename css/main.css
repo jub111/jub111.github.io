@@ -466,11 +466,8 @@ section#article .article__text-block .spacer--32, section#article .article__text
 section#article .article__text-block .spacer--52, section#article .article__text-block--gold .spacer--52 {
   display: block;
   padding-bottom: 52px; }
-section#article .article__text-block .text-block__inline-image-block {
-  padding-top: 52px;
-  padding-bottom: 52px; }
-  section#article .article__text-block .text-block__inline-image-block img {
-    min-width: 100%; }
+section#article .article__text-block .text-block__inline-image-block img {
+  min-width: 100%; }
 section#article .article__text-block--bold {
   font-size: 20px; }
 section#article .article__video-block .container, section#article .article__image-block .container {
