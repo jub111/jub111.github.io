@@ -60,6 +60,7 @@ $(document).ready(function() {
 			$(".misc-article").slice(2).hide();
 			$('a.misc-articles__load_more_link').click(function() {
 				$(".misc-article").show();
+				$('.misc-articles__load_more_link').hide();	
 			})
 		};
 	}
