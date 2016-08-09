@@ -100,13 +100,23 @@ header {
   left: 0;
   z-index: 10000; }
   header .container {
-    position: relative;
-    padding-top: 52px;
-    padding-bottom: 32px; }
+    position: relative; }
     header .container:before, header .container:after {
       display: block;
       content: '';
       clear: both; }
+    @media (max-width: 700px) {
+      header .container {
+        padding-top: 32px;
+        padding-bottom: 20px; } }
+    @media (min-width: 701px) and (max-width: 1063px) {
+      header .container {
+        padding-top: 52px;
+        padding-bottom: 32px; } }
+    @media (min-width: 1064px) {
+      header .container {
+        padding-top: 52px;
+        padding-bottom: 32px; } }
   @media (max-width: 700px) {
     header nav.nav-left {
       float: left;
