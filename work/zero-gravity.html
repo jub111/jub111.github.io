@@ -1,164 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
+	<head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Jonas Brinkhoff</title>
-	<meta name="description" content="Portfolio of Jonas Brinkhoff. Experience and interface designer with substantial understanding of coding">
-	<meta name="keywords" content="jonas brinkhoff, human computer interaction, design, designer, interaction, interface, experience, UI, UX, webdesign, webdevelopment" />
+		<title>Jonas Brinkhoff</title>
+		<meta name="description" content="Portfolio of Jonas Brinkhoff. Experience and interface designer with substantial understanding of coding">
+		<meta name="keywords" content="jonas brinkhoff, human computer interaction, design, designer, interaction, interface, experience, UI, UX, webdesign, webdevelopment" />
 
-	<link rel="stylesheet" href="/css/main.css">
+		<link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/css/main.css">
 </head>
-  <body>
-    
-<header>
-	
-	<div class="info-message">
-		<div class="text">
-			<p>Hey there! I’m currently looking for an internship - please <a class="underlined" href="mailto:hello@jonasbrinkhoff.com">get in touch</a>.</p>	
-		</div>
-		<a class="close-button"><img src="assets/icons/close.png" alt="Close Button"></a>
-	</div>
-	<nav>
-		<div class="logo"><h1><a href="/">Jonas Brinkhoff</a></h1></div>
 
-		<div class="menu">
-			<a class="active" href="/#work">Work</a>
-			<a href="mailto:hello@jonasbrinkhoff.com">Contact</a>
-		</div>
 
-		<div class="contact">
-			<a href="mailto:hello@jonasbrinkhoff.com">hello@jonasbrinkhoff.com</a>
-		</div>
-	</nav>
-</header>
-    <section id="zero-gravity" class="project">
+	<body id="article">
+		<header>
 	<div class="container">
-		<div class="headline">
-			<h2>Zero Gravity</h2>
-			<p class="caption">Immersive Flight Simulator</p>
-		</div>
-	</div>
-	<div class="container">
-		<div class="text">
-			<p>
-				As part of an university project we created the immersive flight simulator "Zero Gravity". Our goal was to convey the feeling of flying by combining three innovative technologies: Oculus Rift, Kinect and Unity. We wanted people to have the opportunity to experience the world virtually in midair.
-			</p>
-			<p>
-				The project was presented at the <a class="underlined" href="http://ieeevr.org/2016/" target="_blank">IEEE VR 2016</a> conference and featuered in the <a class="underlined" href="http://www.airspacemag.com/daily-planet/bird-or-superman-whats-best-way-fly-virtual-reality-180958578/?no-ist" target="_blank">Air & Space Magazine</a>.
-			</p>
-		</div>
-	</div>
-
-	<div class="container container--brand-color">
-		<div class="image-container">
-			<div class="image">
-				<img src="../assets/images/projects/zero-gravity/gear-setup.jpg" alt="Basic setup of the Zero-Gravity Simulator">
-				<p class="caption">The basic setup of the Zero Gravity simulator</p>	
+		<nav class="nav-left">
+			<div class="nav__logo">
+				<a href="/"><b>Jonas Brinkhoff</b></a>
 			</div>
+		</nav>
+
+		<nav class="nav-right">
+			<ul>
+				<li class="nav__contact--link"><a href="mailto:hello@jonasbrinkhoff.com">Contact</a></li>
+				<li class="nav__contact--email"><a href="mailto:hello@jonasbrinkhoff.com">hello@jonasbrinkhoff.com</a></li>
+			</ul>
+		</nav>
+	
+	</div>
+</header>
+
+		<section id="article">
+	<div class="article__hero article__hero--white-font">
+		<div class="article__hero__background-image" style="background-image:url('../assets/images/articles/zero-gravity/article-hero-image.jpg')">
+		</div>
+
+		<div class="container">
+			<div class="hero__text-wrapper">
+				<h1>
+					As part of an university project, we created the immersive flight simulator <b>Zero Gravity</b>. Our goal was to convey the feeling of flying by combining three innovative technologies: Oculus Rift, Kinect, and Unity. We wanted people to have the opportunity to experience the world virtually in mid-air.
+				</h1>	
+			</div>	
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="text">
-			<h3>Our Approach</h3>
+	<div class="article__text-block article__text-block--bold">
+		<div class="container">
+			<strong>This project was presented at the <a href="http://ieeevr.org/2016/" target="_blank">IEEE VR 2016</a> conference and featured in the <a href="http://www.airspacemag.com/daily-planet/bird-or-superman-whats-best-way-fly-virtual-reality-180958578/" target="_blank">Air & Space Magazine.</a></strong>
+		</div>
+	</div>
+
+	<div class="article__text-block">
+		<div class="container">
+			<h2>Our Approach</h2>
 			<p>
-				In order to create this experience we mainly focused on the goal to develop a preferably intuitive, easily understandable and realistic control of movement which is as comfortable as possible and offers a great adventure to the user. We implemented two control concepts: 
+				To create this experience we mainly focused on the goal to develop a preferably intuitive, easily understandable and realistic control of movement which is as comfortable as possible and offers a great adventure to the user. We implemented two control concepts:
 			</p>
-			
-			<h4>Superman Control</h4> 
+
+			<span class="spacer--32"></span>
+
+			<h3>Superman Control</h3>
 			<p>
 				With the superman control method the user controls the steering by pointing his fist in the desired direction. The control output is relative to a predefined neutral position that has to be calibrated in advance.
 			</p>
 
-			<h4>Bird Controll</h4>
-			<p>
-				This concept involves more parts of the users body. For the initial position the users have to straighten both arms like imitating wings. In order to make a left turn, the user has to lower the left arm and raise the right arm for a little bit - just like birds or glider do. A right turn works vice versa.  Ascending or descending in the air is caused by changing the spinal position up or down. 
+			<span class="spacer--32"></span>
 
-				
+			<h3>
+				Bird Controll
+			</h3>
+			<p>
+				This concept involves more parts of the user's body. For the initial position, the users have to straighten both arms like imitating wings. To make a left turn, the user has to lower the left arm and raise the right arm for a little bit - just like birds or glider do. A right turn works vice versa. Ascending or descending in the air is caused by changing the spinal position up or down.
 			</p>
 		</div>
 	</div>
 
-	<div class="container container--brand-color">
-		<div class="video">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/IU3iztLBKoI?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-	<div class="container">
-		<div class="text">
-			<h3>Evaluation of Control Concepts</h3>
-			<p>
-				In order to compare both control methods we conducted two different studies with the Zero Gravity Flight Simulator. In both studies a within subject design was used and the participants were asked to navigate through a flight course.
-			</p>
-		</div>
-		<div class="spacer"></div>
-		
-		<div class="image-container">
-			<div class="image">
-				<img src="../assets/images/projects/zero-gravity/flight-course.jpg" alt="The flight course">
+
+	<div class="article__video-block">
+		<div class="container">
+			<div class="video-block__video-wrapper">
+				<div class="video-block__video">
+					<iframe min-width="100%" src="https://www.youtube.com/embed/IU3iztLBKoI" frameborder="0" allowfullscreen></iframe>	
+				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="text">
-			
-			<h4>The First Study</h4>
+	<div class="article__text-block">
+		<div class="container">
+			<h2>Evaluation of Control Concepts</h2>
 			<p>
-				We aimed to find out which of the two controls is the most intuitive, simplest and easiest to understand we conducted a study. The participants rated their experience in the categories intuition, simplicity, comprehensibility and consistency. It became very clear that the superman-control was favored by almost every test subject. In every category which included aspects like intuition, simplicity, comprehensibility and consistency we got results of 2 or better (1 = excellent, 6 = insufficient). Merely the physical effort was rated a little bit worse.
+				To compare both control methods, we conducted two different studies with the Zero Gravity Flight Simulator. In both studies, a within-subject design was used, and the participants were asked to navigate through a flight course.
 			</p>
 
-			<h4>The Second Study</h4>
+			<div class="text-block__inline-image-block">
+				<img src="/assets/images/articles/zero-gravity/article-flight-course.jpg" alt="The flight course">
+			</div>
+
+			<h3>The First Study</h3>
+			<p>
+				We aimed to find out which of the two controls is the most intuitive, simplest and easiest to understand we conducted a study. The participants rated their experience in the categories intuition, simplicity, comprehensibility and consistency. It became very apparent that almost every test subject favored the superman-control. In each category which included aspects like intuition, simplicity, comprehensibility and consistency we got results of 2 or better (1 = excellent, 6 = insufficient). Merely the physical effort was rated a little bit worse.
+			</p>
+
+			<span class="spacer--32"></span>
+
+			<h3>The Second Study</h3>
 			<p>
 				Our second study aimed to compare the control methods based on quantitative data. We tracked the time it took the participants to reach the gates during the experiment and the accuracy how close to the center of the target gates they flew through.
-				
-			</p>
-		</div>
-		<div class="spacer"></div>
-
-		<div class="image-container image-container--large two-images">
-			<div class="image">
-				<img src="../assets/images/projects/zero-gravity/results-time.jpg" alt="Median flight time">
-			</div>
-			<div class="image">
-				<img src="../assets/images/projects/zero-gravity/results-deviation.jpg" alt="Mean accuracy">
-			</div>
-		</div>
-
-		<div class="text">
-			<p>
-				For more information and the results of the study please visit our <a class="underlined" href="https://www.inf.uni-hamburg.de/en/inst/ab/hci/projects/zero-gravity.html" target="_blank">project page</a> and read the <a href="https://www.researchgate.net/publication/281347619_Evaluation_of_Control_Methods_in_a_Supernatural_Zero-Gravity_Flight_Simulator" target="_blank" class="underlined">full paper</a>.
 			</p>
 		</div>
 	</div>
 
-	<script src="../assets/js/jquery-1.12.3.min.js"></script>
-	<script src="../assets/js/fitvids.js"></script>
-	<script>
-		$(document).ready(function(){
-			// Target your .container, .wrapper, .post, etc.
-			$(".video").fitVids();
-		});
-	</script>
+	<div class="article__image-block article__image-block--two-images">
+		<div class="container">
+			<div class="image-block__image-wrapper">
+				<img src="/assets/images/articles/zero-gravity/article-time-graph.jpg" alt="">				
+			</div>
+			<div class="image-block__image-wrapper">
+				<img src="/assets/images/articles/zero-gravity/article-deviation-graph.jpg" alt="">				
+			</div>
+		</div>
+	</div>
 
+	<div class="article__text-block">
+		<div class="container">
+			<h2>More Information</h2>
+			<p>For more information and the results of the study, please visit our <a href="https://www.inf.uni-hamburg.de/en/inst/ab/hci/projects/zero-gravity.html" target="_blank">project page</a> or read the <a href="https://www.researchgate.net/publication/281347619_Evaluation_of_Control_Methods_in_a_Supernatural_Zero-Gravity_Flight_Simulator" target="_blank">full paper</a>.</p>
+		</div>
+	</div>
 </section>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46764064-3', 'auto');ga('send', 'pageview');
-</script>
-<footer>
-	<hr>
-	<div class="contact">
-		<p>For more work samples and information, please ask for an offline portfolio.</p>
-	</div>
 
-	<div class="social">
-		<a class="underlined" href="https://dribbble.com/jonasbrinkhoff" target="_blank">dribbble</a>
-		<a class="underlined" href="">LinkedIn</a>
+<section id="next-article">
+	<div class="container">
+		<h2 class="section-title">Next Project</h2>
+		<article class="next-article">
+			<a href="/work/zero-gravity">
+				<span class="next-article__text-wrapper">
+					<h3 class="next-article__title">
+						Romeo Zaccaria
+					</h3>
+					<p class="next-article__body">
+						Romeo Zaccaria is a Berlin-based construction company with Italian roots, specialized in the restoration of stucco. I was responsible for designing their new website along with the front- and back-end development.
+					</p>
+					<strong class="next-article__link">
+						Read more
+					</strong>	
+				</span>
+			</a>
+		</article>
 	</div>
+</section>
+		
+		<section id="contact">
+	<div class="container">
+		<h2 class="section-title">Contact</h2>
 
-	<div class="copyright">
-		Copyright 2016 © Jonas Brinkhoff
+		<a href="mailto:hello@jonasbrinkhoff.com" class="mail">hello@jonasbrinkhoff.com</a>
 	</div>
-</footer>
+</section>
+
+<section id="copyright">
+	<div class="container">
+		<p>Copyright 2016 by Jonas Brinkhoff</p>
+	</div>
+</section>
+		<script type="text/javascript" src="/assets/js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="/assets/js/masonry.min.js"></script>
+<script type="text/javascript" src="/assets/js/main.js"></script>
+	</body>
 </html>
