@@ -108,15 +108,15 @@ header {
     @media (max-width: 700px) {
       header .container {
         padding-top: 32px;
-        padding-bottom: 20px; } }
+        padding-bottom: 12px; } }
     @media (min-width: 701px) and (max-width: 1063px) {
       header .container {
         padding-top: 52px;
-        padding-bottom: 32px; } }
+        padding-bottom: 20px; } }
     @media (min-width: 1064px) {
       header .container {
         padding-top: 52px;
-        padding-bottom: 32px; } }
+        padding-bottom: 20px; } }
   @media (max-width: 700px) {
     header nav.nav-left {
       float: left;
@@ -168,12 +168,14 @@ header {
         padding-right: 24px; }
         header nav.nav-right .nav__contact--link {
           display: none; } }
-  header.header--white-font nav.nav-left {
-    color: #ffffff; }
-  header.header--white-font nav.nav-right a {
-    color: #ffffff; }
-    header.header--white-font nav.nav-right a:hover {
-      text-decoration: underline; }
+  header.header--white-font {
+    background: black; }
+    header.header--white-font nav.nav-left {
+      color: #ffffff; }
+    header.header--white-font nav.nav-right a {
+      color: #ffffff; }
+      header.header--white-font nav.nav-right a:hover {
+        text-decoration: underline; }
 
 #hero .container {
   position: relative;

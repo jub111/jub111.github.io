@@ -36,9 +36,11 @@
 	popup.init();
 })()
 
-$(document).ready(function() {
 
+// Page: Index
+$(window).on('load', function() {
 	if($('body#index').length > 0) {
+
 		// Profil Image
 		$('#hero .show-profil-image').hover(
 			function() {
@@ -64,6 +66,10 @@ $(document).ready(function() {
 			})
 		};
 	}
+});
+
+// Page: Article
+$(document).ready(function() {
 
 	if($('body#article').length > 0) {
 		// Header Font Color
