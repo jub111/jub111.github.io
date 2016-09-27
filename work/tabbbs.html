@@ -35,11 +35,14 @@
 </header>
 
 		<section id="article">
-	<div class="article__hero" style="background-color: #EEEBF4;">
+	<div class="article__hero" style="background-color: #FCE9F1;">
+		<div class="article__hero__background-image">
+		</div>
+
 		<div class="container">
 			<div class="hero__text-wrapper">
 				<h1>
-					<b><a href="http://romeozaccaria.de/" target="_blank">Romeo Zaccaria</a></b> is a Berlin-based construction company with Italian roots, specialized in the restoration of stucco. I was responsible for designing their new website along with the front- and back-end development.
+					<b>Tabbbs</b> is tiny chrome extension that makes browsing on dribbble more comfortable. It is a small side project I have created for fun within in day.
 				</h1>	
 			</div>	
 		</div>
@@ -50,80 +53,61 @@
 			<div class="glance-block__element">
 				<strong class="glance-block__element__title">Skills</strong>
 				<p>
-					UI/ UX Design<br>
-					Front- and Back-End Development
+					HTML, CSS, JavaScript<br>
+					UI Design
 				</p>
 			</div>
 
 			<div class="glance-block__element">
 				<strong class="glance-block__element__title">Type</strong>
-				<p>Website</p>
+				<p>Chrome Extension</p>
 			</div>
 
 			<div class="glance-block__element">
 				<strong class="glance-block__element__title">Year</strong>
-				<p>2015</p>
+				<p>2016</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="article__text-block">
 		<div class="container">
-			<h2>The Challenge</h2>
+			<h2>The problem</h2>
 			<p>
-				The client requested a modern looking website which harmonizes with their existing unique corporate identity. Besides the landing page, the site should also provide individual pages for their services as well as their references. To maintain their website and add additional references, the client asked for an easy-to-use content management system. After considering multiple existing CMS, we agreed on developing a custom solution.
-			</p>
-		</div>		
-	</div>
-
-	<div class="article__image-block article__image-block--one-image">
-		<div class="container">
-			<div class="image-block__image-wrapper">
-				<img src="/assets/images/articles/romeo-zaccaria/article-screenshot-landing-page-detail.jpg" alt="Screenshot from romeozaccaria.de">		
-			</div>
-		</div>
-	</div>
-
-	<div class="article__text-block">
-		<div class="container">
-			<h2>Restoring the Logo</h2>
-			<p>
-				Before I could start to design the actual website, there was another thing left to do: The client's logo had to be restored, because of its poor quality.
+				A while ago, dribbble changed their design. Instead of dividing their feed into multiple pages, they started to use infinite scrolling. While this definitely has several advantages, it can cause hiccups when navigating back and forth in your browser. By default, user profiles and links in shot descriptions are opened in the same tab - if you open one of them and afterward navigate back to the feed, you often don't end up at the previous scroll position.
 			</p>
 
 			<span class="spacer--52"></span>
 
-			<div class="text-block__inline-image-block">
-				<img src="/assets/images/articles/romeo-zaccaria/article-restored-logo.jpg" alt="Restoring of the logo">		
-			</div>			
-		</div>
-	</div>
-
-	<div class="article__text-block">
-		<div class="container">
-			<h2>Sketches</h2>
+			<h2>The Solution</h2>
 			<p>
-				I compared various websites of construction companies to get an overview of their general layout and their specific norms. In close cooperation with the client, I worked on several sketches, which were the foundation for the further design process.
+				It's a small detail, but I consistently annoyed me. Therefore I decided to develop <b>tabbbs</b>, a tiny chrome extension that ensures those links are always opened in a new tab.
 			</p>
+			<br>
+			<p>
+				You can download it for free at the <a href="https://chrome.google.com/webstore/detail/tabbbs/gclpgjhgdjmaolopikgndkepbkcangcg" target="_blank">Chrome Web Store</a>.
+			</p>
+
 		</div>
 	</div>
 
-	<div class="article__image-block article__image-block--two-images">
+	<div class="article__image-block article__image-block--one-image">
 		<div class="container">
 			<div class="image-block__image-wrapper">
-				<img src="/assets/images/articles/romeo-zaccaria/article-wireframe-01.jpg" alt="Initial Sketch">		
-			</div>
-			<div class="image-block__image-wrapper">
-				<img src="/assets/images/articles/romeo-zaccaria/article-wireframe-02.jpg" alt="Initial Sketch">		
+				<img src="/assets/images/articles/tabbbs/screenshot-installation.jpg" alt="Tabbbs Chrome Extension - Installation">		
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="article__text-block">
 		<div class="container">
-			<h2>The Final Design</h2>
+			<h3>How it works</h3>
 			<p>
-				As mentioned earlier, one of biggest challenges was to craft a modern looking design that harmonizes with the client's corporate identity. Based on the sketches, the newly restored logo, and their color palette I started to create the look and feel of the new website.
+				The extension works by simply adding a <span style="font-family:'Courier'; background: #f2f2f2; padding: 2px 4px"><span style="color: #D88417">target</span>=<span style="color: #249D7F">"_blank"</span></span> to the respective links via JavaScript. The whole project is open source, you can find the code on <a href="https://github.com/jub111/tabbbs" target="_blank">GitHub</a>.
+			</p>
+			<br>
+			<p>
+				By default, each link to a user profiles and each link in a shot description is opened in a new tab. However, you can change that in the settings.
 			</p>
 		</div>
 	</div>
@@ -131,40 +115,42 @@
 	<div class="article__image-block article__image-block--one-image">
 		<div class="container">
 			<div class="image-block__image-wrapper">
-				<img src="/assets/images/articles/romeo-zaccaria/article-screenshot-landing-page.jpg" alt="Screenshot from romeozaccaria.de">		
+				<img src="/assets/images/articles/tabbbs/screenshot-settings.jpg" alt="Tabbbs Chrome Extension - Settings">		
 			</div>
 		</div>
 	</div>
-	<div class="article__image-block article__image-block--one-image">
-		<div class="container">
-			<div class="image-block__image-wrapper">
-				<img src="/assets/images/articles/romeo-zaccaria/article-screenshot-services.jpg" alt="Screenshot from romeozaccaria.de">		
-			</div>
-		</div>
-	</div>
+
 	<div class="article__text-block">
 		<div class="container">
-			<h2>See it live!</h2>
+			<h2>Landing Page</h2>
 			<p>
-				If you want to see the live version, please visit the website of <a href="http://romeozaccaria.de/" target="_blank">Romeo Zaccaria</a>.
+				I have also created a simple landing page with github pages. You can find it <a href="http://jub111.github.io/tabbbs/" target="_blank">here</a>.
 			</p>
 		</div>
 	</div>
+
+	<div class="article__image-block article__image-block--one-image">
+		<div class="container">
+			<div class="image-block__image-wrapper">
+				<img src="/assets/images/articles/tabbbs/screenshot-landing.jpg" alt="Tabbbs Landing Page">		
+			</div>
+		</div>
+	</div>
+
+
 </section>
-
-
 
 <section id="next-article">
 	<div class="container">
 		<h2 class="section-title">Next Project</h2>
 		<article class="next-article">
-			<a href="/work/zero-gravity">
+			<a href="/work/romeo-zaccaria">
 				<span class="next-article__text-wrapper">
 					<h3 class="next-article__title">
-						Superman vs. Bird - Evaluating Two Immersive Flight Simulator Control Methods
+						Romeo Zaccaria
 					</h3>
 					<p class="next-article__body">
-						As part of an university project we created the immersive flight simulator Zero Gravity. Our goal was to convey the feeling of flying combining three innovative technologies: Oculus Rift, Kinect and Unity.
+						Romeo Zaccaria is a Berlin-based construction company with Italian roots, specialized in the restoration of stucco. I was responsible for designing their new website along with the front- and back-end development.
 					</p>
 					<strong class="next-article__link">
 						Read more
