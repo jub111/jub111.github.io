@@ -473,6 +473,8 @@ section#article .article__text-block .container, section#article .article__text-
   max-width: 818px; }
 section#article .article__text-block .text-block__inline-image-block img {
   min-width: 100%; }
+section#article .article__text-block .text-block__inline-image-block .caption {
+  padding-top: 12px; }
 section#article .article__text-block--bold {
   font-size: 20px; }
 section#article .article__video-block .container, section#article .article__image-block .container {
