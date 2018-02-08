@@ -1,181 +1,133 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="UTF-8">
+	<title>Jonas Brinkhoff</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio of Jonas Brinkhoff. Experience and interface designer who also loves to code">
+	<meta name="keywords" content="jonas brinkhoff, human computer interaction, design, designer, interaction, interface, experience, UI, UX, webdesign, webdevelopment">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
 
-		<title>Jonas Brinkhoff</title>
-		<meta name="description" content="Portfolio of Jonas Brinkhoff. Experience and interface designer who also loves to code">
-		<meta name="keywords" content="jonas brinkhoff, human computer interaction, design, designer, interaction, interface, experience, UI, UX, webdesign, webdevelopment" />
+	<style>
+		* {
+			box-sizing: border-box;
+			text-rendering: optimizeLegibility;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			font-kerning: auto;
+		}
 
-		<link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/css/main.css">
-		<link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
+		html {
+			font-family: sans-serif;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			margin: 0;
+			font-family: "Karla", sans-serif;
+			font-size: 18px;
+		}
+
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+					transform: translate(-50%, -50%);
+			    -ms-transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			text-align: center;
+			width: 100%;
+			z-index: 100;
+		}
+
+		h1 {
+			font-size: 32px;
+			line-height: 44px;
+			font-weight: 400;
+			color: rgba(0, 0, 0, 0.87);
+			margin: 0;
+			padding: 20px 0 50px 0;
+		}
+
+		@media (max-width: 400px) {
+			h1 {
+				font-size: 24px;
+				line-height: 34px;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.54);
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.marquee {
+			position: absolute;
+			top: 50%;
+					transform: translateY(-50%);
+			    -ms-transform: translateY(-50%);
+			-webkit-transform: translateY(-50%);
+			width: 100%;
+			margin: 0 auto;
+			white-space: nowrap;
+			overflow: hidden;
+			box-sizing: border-box;
+			font-size: 380px;
+			color: rgba(0, 0, 0, 0.1);
+			z-index: -100;
+		}
+
+		@media (max-width: 400px) {
+			.marquee {
+				font-size: 350px;
+			}
+		}
+
+		.marquee span {
+			display: inline-block;
+			padding-left: 100%;
+			        animation: marquee 30s linear infinite;
+			-webkit-animation: marquee 30s linear infinite;
+		}
+
+		@-webkit-keyframes marquee {
+			0% {
+				        transform: translate(0, 0);
+				    -ms-transform: translate(0, 0);
+				-webkit-transform: translate(0, 0);
+			}
+			100% {
+						transform: translate(-100%, 0);
+				    -ms-transform: translate(-100%, 0);
+				-webkit-transform: translate(-100%, 0);
+			}
+		}
+
+		@keyframes marquee {
+			0% {
+				        transform: translate(0, 0);
+				    -ms-transform: translate(0, 0);
+				-webkit-transform: translate(0, 0);
+			}
+			100% {
+						transform: translate(-100%, 0);
+				    -ms-transform: translate(-100%, 0);
+				-webkit-transform: translate(-100%, 0);
+			}
+		}
+	</style>
 </head>
-
-
-	<body id="index">
-		<header>
-	<div class="container">
-		<nav class="nav-left">
-			<div class="nav__logo">
-				<a href="/"><b>Jonas Brinkhoff</b></a>
-			</div>
-		</nav>
-
-		<nav class="nav-right">
-			<ul>
-				<li class="nav__contact--link"><a href="mailto:hello@jonasbrinkhoff.com">Contact</a></li>
-				<li class="nav__contact--email"><a href="mailto:hello@jonasbrinkhoff.com">hello@jonasbrinkhoff.com</a></li>
-			</ul>
-		</nav>
-	
+<body>
+	<div class="text">
+		<h1><b>Jonas Brinkhoff</b> is a<br>Freelance UI/UX Designer<br>and Web Developer</h1>
+		<a href="">hello@jonasbrinkhoff.com</a>
 	</div>
-</header>
-
-		<section id="hero">
-	<div class="container">
-		<h1>
-			<b><span class="show-profil-image">Jonas Brinkhoff</span></b>  — an experience and interface designer who also loves to code.
-		</h1>
-
-		<div class="profil-image">
-			<img src="assets/images/jonas-brinkhoff.jpg" alt="Jonas Brinkhoff">
-		</div>
-	</div>
-</section>
-
-<section id="featured-articles">
-	<div class="container">
-		<h2 class="section-title">Featured Work</h2>
-		<article class="featured-article">
-			<a href="/work/romeo-zaccaria">
-				<div class="featured-article__thumbnail">
-					<img src="assets/images/articles/romeo-zaccaria/featured-articles-thumb.jpg" alt="Romeo Zaccaria">
-				</div>
-				<div class="featured-article__text-wrapper">
-					<h3 class="featured-article__title">Romeo Zaccaria</h3>
-					<p class="featured-article__body">Redesign and implementation of a construction company website.</p>
-				</div>
-			</a>
-		</article>	
-
-		<article class="featured-article">
-			<a href="/work/tabbbs">
-				<div class="featured-article__thumbnail">
-					<img src="assets/images/articles/tabbbs/featured-articles-thumb.jpg" alt="Tabbbs Chrome Extension">
-				</div>
-				<div class="featured-article__text-wrapper">
-					<h3 class="featured-article__title">Tabbbs</h3>
-					<p class="featured-article__body">Tiny chrome extension that makes browsing on dribbble more comfortable.</p>
-					<!-- Discover and share exciting places with your friends and a small invite-only community.-->
-				</div>
-			</a>
-		</article>	
-	</div>
-</section>
-
-<section id="user-research-articles">
-	<div class="container">
-		<h2 class="section-title">User Research</h2>
-		
-		<article class="user-research-article">
-			<a href="/work/zero-gravity">
-				<h3 class="user-research-article__title">
-					Superman vs. Bird - Evaluating Two Immersive Flight Simulator Control Methods
-				</h3>
-				<p class="user-research-article__body">
-					As part of an university project we created the immersive flight simulator Zero Gravity. Our goal was to convey the feeling of flying combining three innovative technologies: Oculus Rift, Kinect and Unity.
-				</p>
-				<strong class="user-research-article__link">
-					Read more
-				</strong>
-			</a>
-		</article>
-
-		<article class="user-research-article">
-			<a>
-				<h3 class="user-research-article__title">
-					Dark User Interface Pattern
-				</h3>
-				<p class="user-research-article__body">
-					As part of my bachelor thesis, I conducted a large-scale study to investigate the effects of using dark patterns on the user experience and customer loyalty intentions.
-				</p>
-				<strong class="user-research-article__link">
-					Comming soon
-				</strong>
-			</a>
-		</article>
-	</div>
-</section>
-
-<section id="misc-articles">
-	<div class="container">
-		<h2 class="section-title">Miscellaneous</h2>
-		
-		<div class="masonry-grid">
-			<article class="misc-article masonry-grid__item">
-				<a href="#ulrike-brinkhoff">
-					<div class="misc-article__thumbnail">
-						<img src="assets/images/articles/ulrike-brinkhoff/misc-article-thumb.jpg" alt="Ulrike Brinkhoff">	
-					</div>
-				</a>
-			</article>
-
-			<article class="misc-article masonry-grid__item">
-				<a href="#anissa-brinkhoff">
-					<div class="misc-article__thumbnail">
-						<img src="assets/images/articles/anissa-brinkhoff/misc-article-thumb.jpg" alt="Ulrike Brinkhoff">
-					</div>
-				</a>
-			</article>
-
-			<article class="misc-article masonry-grid__item">
-				<a href="#ralf-boie">
-					<div class="misc-article__thumbnail">
-						<img src="assets/images/articles/ralf-boie/misc-article-thumb.jpg" alt="Ulrike Brinkhoff">
-					</div>
-				</a>
-			</article>
-		</div>
-		<a class="misc-articles__load_more_link"><b>Load More</b></a>
-	</div>
-	
-	<div id="popup">
-		<div id="popup__content"><!-- Popup Content is loaded here --></div>
-		<a id="popup__close" href="#close">
-			<img src="assets/icons/close.png" alt="">
-		</a>
-	</div>
-</section>
-
-		
-		<section id="contact">
-	<div class="container">
-		<h2 class="section-title">Contact</h2>
-
-		<a href="mailto:hello@jonasbrinkhoff.com" class="mail">hello@jonasbrinkhoff.com</a>
-	</div>
-</section>
-
-<section id="copyright">
-	<div class="container">
-		<p>Copyright 2016 by Jonas Brinkhoff</p>
-	</div>
-</section>
-		<script type="text/javascript" src="/assets/js/jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="/assets/js/masonry.min.js"></script>
-<script type="text/javascript" src="/assets/js/main.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-46764064-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-	</body>
+	<p class="marquee"><span>Under Construction</span></p>
+</body>
 </html>
