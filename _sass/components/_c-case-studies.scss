@@ -26,10 +26,8 @@
 		}	
 	}
 
-
 	.c-case-study {
 		margin-bottom: 96px;
-		
 
 		@include media('<=sm') {
 			grid-column-start: span 12;
@@ -61,4 +59,10 @@
 			margin-bottom: 16px;
 		}
 	}
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateY(0px);
+  }
 }

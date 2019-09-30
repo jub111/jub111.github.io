@@ -120,7 +120,7 @@ a.o-anchor { display: block; }
 
 #p-about .l-container:first-of-type { margin-top: 0; }
 
-#p-clothparency.c-case-study .c-image-cover { background-color: #D9F3EA; background-image: url("../../assets/pages/case-studies/clothparency/cover-1920w@1x.jpg"); background-position: center bottom; background-size: cover; background-repeat: no-repeat; }
+#p-clothparency.c-case-study .c-image-cover { background-color: #2F8064; background-image: url("../../assets/pages/case-studies/clothparency/cover-1920w@1x.jpg"); background-position: center bottom; background-size: cover; background-repeat: no-repeat; }
 
 @media (max-width: 639px) { #p-clothparency.c-case-study .c-image-cover { max-height: 640px; } }
 
@@ -324,6 +324,8 @@ a.o-anchor { display: block; }
 .c-case-studies .c-case-study .c-case-study__image img { display: block; }
 
 .c-case-studies .c-case-study .c-case-study__title { margin-bottom: 16px; }
+
+@keyframes slide-in { 100% { transform: translateY(0px); } }
 
 .c-related-case-studies { padding: 128px 0; text-align: center; }
 
