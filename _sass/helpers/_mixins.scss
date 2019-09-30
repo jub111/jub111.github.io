@@ -1,0 +1,29 @@
+@mixin grid-column($sm, $md, $lg, $xl) {
+	@include media('<=sm') {
+		grid-column: $sm;
+	}
+	@include media('md') {
+		grid-column: $md;
+	}
+	@include media('lg') {
+		grid-column: $lg;
+	}
+	@include media('xl') {
+		grid-column: $xl;
+	}
+}
+
+@mixin grid-row($sm, $md, $lg, $xl) {
+	@include media('<=sm') {
+		grid-row: $sm;
+	}
+	@include media('md') {
+		grid-row: $md;
+	}
+	@include media('lg') {
+		grid-row: $lg;
+	}
+	@include media('xl') {
+		grid-row: $xl;
+	}
+}

@@ -1,0 +1,26 @@
+.c-hero {
+
+	.l-grid {
+		align-content: center;
+		min-height: 534px;
+		height: calc(100vh - 32px);
+		max-height: 840px;
+	}
+
+	.c-hero__heading {
+		@include grid-column(1 / span 12, 1 / span 12, 1 / span 10, 1 / span 8);
+		margin-bottom: 64px;
+
+		@include media('xs') {
+			margin-bottom: 40px;			
+		}
+	}
+
+	.c-hero__sub-heading {
+		@include grid-column(1 / span 12, 1 / span 12, 1 / span 10, 1 / span 8);
+	}
+
+	.c-hero__link {
+		white-space: nowrap;
+	}
+}

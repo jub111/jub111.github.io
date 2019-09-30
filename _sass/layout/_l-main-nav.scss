@@ -1,0 +1,137 @@
+.l-main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 2rem 0;
+	transition: 0.2s;
+	z-index: 100;
+
+	@include media('<=sm') {
+		&.is-open {
+			background-color: white;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+
+			.l-main-nav__logo {
+				color: $text__black-primary !important;
+				margin-bottom: 16px;
+			}
+
+			.l-main-nav__list-item {
+				color: $text__black-secondary !important;
+			}
+
+			#ic-menu {
+				fill: black !important;
+			}
+		}
+
+		&.is-closed {
+			.l-main-nav__list {
+				display: none;
+			}
+		}
+	}
+
+	@include input('cursor') {
+		&:hover,
+		&.l-main-nav--transparent-white:hover {
+			background-color: white;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+
+			.l-main-nav__logo {
+				color: $text__black-primary;
+			}
+
+			.l-main-nav__list-item {
+				color: $text__black-secondary;
+			}
+
+			#ic-menu {
+				fill: black;
+			}
+		}
+	}
+	
+	&.l-main-nav--transparent-white {
+		
+		.l-main-nav__logo {
+			color: $text__white-primary;
+		}
+
+		.l-main-nav__list-item {
+			color: $text__white-secondary;
+		}
+
+		#ic-menu {
+			fill: white;
+		}
+	}
+
+	&.l-main-nav--background-white {
+		background-color: white;
+		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+
+		.l-main-nav__logo {
+			color: $text__black-primary;
+		}
+
+		.l-main-nav__list-item {
+			color: $text__black-secondary;
+		}
+
+		#ic-menu {
+			fill: black;
+		}
+	}
+
+	.l-main-nav__logo {
+		font-weight: 600;
+		color: $text__black-primary;
+		
+		@include grid-column(1 / span 8, 1 / span 4, 1 / span 4, 1 / span 4);
+	}
+
+	.l-main-nav__list {
+		@include grid-column(1 / span 12, 5 / span 8, 5 / span 8, 5 / span 8);
+
+		@include media('<=sm') {
+			border-top: 1px solid #F9F9F9;
+		}
+
+		@include media('>=md') {
+			text-align: right;
+		}
+	}
+
+	.l-main-nav__list-item {
+		color: $text__black-secondary;
+
+		&:hover {
+			color: $text__black-primary;
+		}
+
+		@include media('<=sm') {
+			padding-top: 16px;
+		}
+
+		@include media('>=md') {
+			display: inline-block;
+			padding-left: 32px;
+		}
+	}
+
+	.l-main-nav__toggle-nav {
+		grid-column: 9 / span 4;
+		height: 28px;
+		text-align: right;
+
+		@include media('>=md') {
+			display: none;
+		}
+
+		img {
+			padding: 2px 0;
+		}
+	}
+}

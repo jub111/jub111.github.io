@@ -1,0 +1,97 @@
+//@import url('https://fonts.googleapis.com/css?family=Archivo&display=swap');
+//@import url('https://rsms.me/inter/inter.css');
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 16px;
+
+	@include media ("<=sm") {
+		font-size: 12px;
+	}
+
+	@include media ("md") {
+		font-size: 12px;
+	}
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+h1, h2, h3, h4 {
+	font-family: "neue-haas-unica", "Helvetica", sans-serif;
+	color: $text__black-primary;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 54px;
+
+	@include media('xs') {
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	@include media('sm') {
+		font-size: 28px;
+		line-height: 42px;
+	}
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: 400;
+
+	@include media('<=sm') {
+		//font-size: 28px;
+		//line-height: 44px;
+	}
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 44px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 400;
+}
+
+p {
+	color: $text__black-secondary;
+}
+
+b {
+	font-weight: 500;
+}
+
+strong {
+	font-weight: 600;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+	display: inline-block;
+	cursor: pointer;
+
+	&:hover {
+		color: $text__black-primary;
+	}
+
+	&.o-anchor {
+		display: block;
+	}
+}
+

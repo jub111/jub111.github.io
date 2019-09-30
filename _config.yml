@@ -1,0 +1,9 @@
+###########
+# site.title
+
+title: "Jonas Brinkhoff" # the name of your site, e.g. ACME Corp.
+subtitle: 'The portfolio of Jonas Brinkhoff'
+
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog

@@ -1,0 +1,96 @@
+#p-clothparency.c-case-study {
+	.c-image-cover {
+		background-color: #D9F3EA;
+		background-image: url('../../assets/pages/case-studies/clothparency/cover-1920w@1x.jpg');
+		background-position: center bottom;
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		@include media('<=sm') {
+			max-height: 640px;
+		}
+
+		@include media('>=md') {
+			max-height: 880px;
+		}
+
+		@include media('xs') {
+			background-image: 
+				-webkit-image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-375w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-375w@2x.jpg') 2x,
+			);
+			background-image: 
+				image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-375w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-375w@2x.jpg') 2x,
+			);
+		}
+
+		@include media('sm') {
+			background-image: 
+				-webkit-image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-640w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-640w@2x.jpg') 2x,
+			);
+			background-image: 
+				image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-640w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-640w@2x.jpg') 2x,
+			);
+		}
+
+		@include media('md') {
+			background-image: 
+				-webkit-image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-1152w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-1152w@2x.jpg') 2x,
+			);
+			background-image: 
+				image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-1152w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-1152w@2x.jpg') 2x,
+			);
+		}
+
+		@include media('lg') {
+			background-image: 
+				-webkit-image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-1920w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-1920w@2x.jpg') 2x,
+			);
+			background-image: 
+				image-set(
+					url('../../assets/pages/case-studies/clothparency/cover-1920w@1x.jpg') 1x,
+					url('../../assets/pages/case-studies/clothparency/cover-1920w@2x.jpg') 2x,
+			);
+		}
+	}
+
+	.c-section--with-background {
+		background-color: #F9FCFB;
+	}
+
+	.l-table, 
+	.l-table__head,
+	.l-table__row,
+	.c-images__head {
+		border-bottom-color: #C2DAD1;
+	}
+
+	.c-feature__text {
+		border-top-color: #C2DAD1;	
+	}
+
+	.l-table__head span,
+	.c-table__numbered-list__number span,
+	.c-images__head,
+	.c-feature__text,
+	.is-accent {
+		color: #2F8064;
+	}
+
+	.c-table__break {
+		margin-top: 16px;
+	}
+}

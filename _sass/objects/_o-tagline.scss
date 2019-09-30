@@ -1,0 +1,13 @@
+.o-tagline {
+	font-size: 16px;
+	line-height: 28px;
+	color: $text__black-tertiary;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	display: inline-block;
+
+	@include media('<=sm') {
+
+	}
+}

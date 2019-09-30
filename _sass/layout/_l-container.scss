@@ -1,0 +1,24 @@
+.l-container {
+	margin: 0px auto;
+
+	@include media("<=sm") {
+		padding: 0 16px;
+	}
+	@include media("md") {
+		padding: 0 64px;
+	}
+	@include media("lg") {
+		max-width: 928px;
+	}
+	@include media("xl") {
+		max-width: 1120px;
+	}
+
+	&.l-container--small {
+		max-width: 640px
+	}
+
+	&.l-container--medium {
+		max-width: 928px
+	}
+}

@@ -1,135 +1,94 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Jonas Brinkhoff</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Freelance UI/UX Designer and Web Designer.">
-	<meta name="keywords" content="jonas brinkhoff, human computer interaction, design, designer, interaction, interface, experience, UI, UX, webdesign, webdevelopment">
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32">
-	
-	<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46764064-3', 'auto');ga('send', 'pageview');</script>
+---
+layout: default
+title: "Portfolio"
+---
 
-	<style>
-		* {
-			box-sizing: border-box;
-			text-rendering: optimizeLegibility;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-			font-kerning: auto;
-		}
+<section class="c-hero">
+	<div class="l-container">
+		<div class="l-grid">
+			<h1 class="c-hero__heading"><b>Hey, I’m Jonas – </b>a UI/UX Designer & Web Developer who creates experiences that positively impact people.</h1>
+			<p class="c-hero__sub-heading">I’m currently seeking job opportunities. 
+				<a href="mailto:hello@jonasbrinkhoff.com" class="c-hero__link o-inline-link"><u>Drop me a line.</u></a>
+			</p>
+		</div>
+	</div>	
+</section>
 
-		html {
-			font-family: sans-serif;
-			-webkit-text-size-adjust: 100%;
-		}
+<a name="work" class="o-anchor"></a>
+<section class="c-case-studies">
+	<div class="l-container">
+		<div class="l-grid">
+			
+			<div id="green-aisle" class="c-case-study">
+				<a href="/case-studies/green-aisle">
+					<div class="c-case-study__image">
+						<img src="assets/pages/home/case-studies/green-aisle-448w@1x.jpg"
+							srcset="assets/pages/home/case-studies/green-aisle-448w@1x.jpg 1x,
+									assets/pages/home/case-studies/green-aisle-448w@2x.jpg 2x"
+							alt="Green Aisle">
+					</div>
+					<div class="c-case-study__body">
+						<h4 class="c-case-study__title"><b>Green Aisle – </b>Designing a Companion App for Ethical Consumers</h4>	
+						<p class="c-case-study__services">Design Research, UI/UX Design</p>
+					</div>
+				</a>
+			</div>	
 
-		body {
-			margin: 0;
-			font-family: "Karla", sans-serif;
-			font-size: 18px;
-		}
+			<div id="matchmetrics-id" class="c-case-study">
+				<a href="">
+					<div class="c-case-study__image">
+						<img src="assets/pages/home/case-studies/matchmetrics-id-448w@1x.jpg"
+						srcset="assets/pages/home/case-studies/matchmetrics-id-448w@1x.jpg 1x,
+								assets/pages/home/case-studies/matchmetrics-id-448w@2x.jpg 2x"
+						alt="Matchmetrics ID">
+					</div>
+					<div class="c-case-study__body">
+						<h4 class="c-case-study__title"><b>Matchmetrics ID – </b>A Customer Interface for Matchmetrics’ Product Line-Up</h4>	
+						<p class="c-case-study__services">Coming Soon</p>
+					</div>
+				</a>
+			</div>
+		</div>
 
-		.text {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-					transform: translate(-50%, -50%);
-			    -ms-transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
-			text-align: center;
-			width: 100%;
-			z-index: 100;
-		}
+		<div class="l-grid">
+			<div id="scoutpad" class="c-case-study">
+				<a href="">
+					<div class="c-case-study__image">
+						<img src="assets/pages/home/case-studies/scoutpad-448w@1x.jpg"
+						srcset="assets/pages/home/case-studies/scoutpad-448w@1x.jpg 1x,
+								assets/pages/home/case-studies/scoutpad-448w@2x.jpg 2x"
+						alt="Scoutpad">
+					</div>
+					<div class="c-case-study__body">
+						<h4 class="c-case-study__title"><b>ScoutPad – </b>Turning a Wordpress Theme into a Custom-Designed Landing Page</h4>
+						<p class="c-case-study__services">Coming Soon</p>
+					</div>
+				</a>
+			</div>
 
-		h1 {
-			font-size: 32px;
-			line-height: 44px;
-			font-weight: 400;
-			color: rgba(0, 0, 0, 0.87);
-			margin: 0;
-			padding: 20px 0 50px 0;
-		}
+			<div id="clothparency" class="c-case-study">
+				<a href="/case-studies/clothparency">
+					<div class="c-case-study__image">
+						<img src="assets/pages/home/case-studies/clothparency-448w@1x.jpg"
+						srcset="assets/pages/home/case-studies/clothparency-448w@1x.jpg 1x,
+								assets/pages/home/case-studies/clothparency-448w@2x.jpg 2x"
+						alt="Clothparency">
+					</div>
+					<div class="c-case-study__body">
+						<h4 class="c-case-study__title"><b>Clothparency – </b>Designing Intuitive and Trustworthy Ratings</h4>
+						<p class="c-case-study__services">UI/UX Design, User Testing</p>
+					</div>
+				</a>
+			</div>	
 
-		@media (max-width: 400px) {
-			h1 {
-				font-size: 24px;
-				line-height: 34px;
-			}
-		}
-
-		a {
-			text-decoration: none;
-			color: rgba(0, 0, 0, 0.54);
-		}
-
-		a:hover {
-			text-decoration: underline;
-		}
-
-		.marquee {
-			position: absolute;
-			top: 50%;
-					transform: translateY(-50%);
-			    -ms-transform: translateY(-50%);
-			-webkit-transform: translateY(-50%);
-			width: 100%;
-			margin: 0 auto;
-			white-space: nowrap;
-			overflow: hidden;
-			box-sizing: border-box;
-			font-size: 380px;
-			color: rgba(0, 0, 0, 0.1);
-			z-index: -100;
-		}
-
-		@media (max-width: 400px) {
-			.marquee {
-				font-size: 350px;
-			}
-		}
-
-		.marquee span {
-			display: inline-block;
-			padding-left: 100%;
-			        animation: marquee 30s linear infinite;
-			-webkit-animation: marquee 30s linear infinite;
-		}
-
-		@-webkit-keyframes marquee {
-			0% {
-				        transform: translate(0, 0);
-				    -ms-transform: translate(0, 0);
-				-webkit-transform: translate(0, 0);
-			}
-			100% {
-						transform: translate(-100%, 0);
-				    -ms-transform: translate(-100%, 0);
-				-webkit-transform: translate(-100%, 0);
-			}
-		}
-
-		@keyframes marquee {
-			0% {
-				        transform: translate(0, 0);
-				    -ms-transform: translate(0, 0);
-				-webkit-transform: translate(0, 0);
-			}
-			100% {
-						transform: translate(-100%, 0);
-				    -ms-transform: translate(-100%, 0);
-				-webkit-transform: translate(-100%, 0);
-			}
-		}
-	</style>
-</head>
-<body>
-	<div class="text">
-		<h1><b>Jonas Brinkhoff</b> is a<br>Freelance UI/UX Designer<br>and Web Developer</h1>
-		<a href="mailto:hello@jonasbrinkhoff.com">hello@jonasbrinkhoff.com</a>
+		</div>
 	</div>
-	<p class="marquee"><span>Under Construction</span></p>
-</body>
-</html>
+</section>
+
+<section class="c-about-teaser">
+	<div class="l-container">
+		<p class="c-about-teaser__tagline o-tagline">About Me</p>
+		<h3 class="c-about-teaser__body">Designer & Developer with 4+ years of experience. Formerly at MediaMonks. Master's degree in Design for Social Impact.  Bachelor’s degree in Human-Computer Interaction. Passionate about pixels, people, and food.</h3>
+		<a class="c-about-teaser__link" href="/about"><p><u>Learn More</u></p></a>
+	</div>
+</section>

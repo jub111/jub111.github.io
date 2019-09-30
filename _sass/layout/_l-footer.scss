@@ -1,0 +1,29 @@
+.l-footer {
+	background-color: #0A0A0A;
+	color: white;
+	text-align: center;
+	padding: 96px 0 24px 0;
+
+	.l-footer__title {
+		color: $text__white-primary;
+		margin-bottom: 48px;
+	}
+
+	.l-footer__email {
+		color: $text__white-primary;
+		margin-bottom: 80px;
+	}
+
+	.l-footer__list-item {
+		display: inline-block;
+		padding: 16px 1.5rem;
+
+		a {
+			color: $text__white-secondary;
+
+			&:hover {
+				color: $text__white-primary;
+			}
+		}
+	}
+}

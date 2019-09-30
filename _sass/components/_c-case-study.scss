@@ -1,0 +1,144 @@
+.c-case-study {
+
+	.c-image-cover {
+		min-height: 534px;
+		height: calc(100vh - 64px);
+		max-height: 720px;
+	}
+
+	.l-container:first-of-type {
+		margin-top: 0;
+	}
+
+	.l-container--small {
+		margin-top: 64px;
+	}
+
+	.l-container--medium {
+		margin-top: 96px;
+	}
+
+	.c-intro {
+		padding: 6rem 0 8rem 0;
+
+		.c-intro__tagline {
+			margin-bottom: 16px;
+		}
+
+		.c-intro__headline {
+			margin-bottom: 32px;
+			font-weight: 500;
+		}
+
+		.c-intro__summary {
+			margin-bottom: 64px;
+		}
+
+		.c-intro__facts	{
+			.c-intro__facts__fact {
+				@include grid-column(span 12, span 4, span 4, span 4);
+
+				@include media('<=sm') {
+					margin-bottom: 16px;
+				}
+			}
+
+			.o-tagline {
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+	.c-feature {
+
+		@include media('<=sm') {
+			margin-top: 96px;
+		}
+
+		@include media ('>=md') {
+			margin-top: 128px;
+			display: flex;
+
+			&.c-feature--sticky {
+				align-items: flex-start;
+
+				.c-feature__text {
+					position: -webkit-sticky;
+					position: sticky;
+					top: 142px;
+				}
+			}
+		}
+
+		.c-feature__text {
+			border-top: 1px solid;
+			font-size: 16px;
+			line-height: 28px;
+
+			@include media ('<=sm') {
+				padding-bottom: 32px;
+			}
+
+
+			@include media ('>=md') {
+				width: 37%;
+				padding-right: 32px;
+			}
+
+
+			.c-feature__heading {
+				display: block;
+				padding: 24px 0 8px 0;
+			}
+
+			.c-feature__body {
+				padding: 8px 0;
+			}
+		}
+
+		.c-feature__asset {
+			@include media ('<=sm') {
+				video {
+					max-width: 376px;
+					max-height: 90vh;
+				}
+			}
+
+			@include media ('>=md') {
+				text-align: center;
+				width: 63%;
+				padding-left: 32px;
+
+				img {
+					margin: 0px auto;
+				}
+
+				video {
+					width: 100%;
+					max-width: 352px;
+				}
+			}
+		}
+	}
+
+	.c-quote {
+		padding: 96px 0 128px 0;
+		text-align: center;
+
+		.c-quote__icon {
+			margin: 0px auto 48px auto;
+		}
+
+		.c-quote__text {
+			font-weight: 500;
+			margin-bottom: 48px;
+		}
+
+		.c-quote__author {
+			max-width: 480px;
+			border-top: 1px solid;
+			padding-top: 16px;
+			margin: 0px auto;
+		}
+	}
+}

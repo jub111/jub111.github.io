@@ -1,0 +1,64 @@
+.c-case-studies {
+	background-color: #F9F9F9;
+
+	.l-container {
+		transform: translate(0, -64px);
+
+	}
+
+	.l-grid {
+		align-items: center;
+
+		&:last-of-type {
+			@include media('<=sm') {
+				.c-case-study:last-of-type {
+					margin-bottom: 32px;
+				}
+			}
+
+			@include media('>=md') {
+				&:last-of-type {
+					.c-case-study {
+						margin-bottom: 32px;
+					}
+				}
+			}
+		}	
+	}
+
+
+	.c-case-study {
+		margin-bottom: 96px;
+		
+
+		@include media('<=sm') {
+			grid-column-start: span 12;
+		}
+
+		@include media('md') {
+			grid-column-start: span 6;
+		}
+
+		@include media('>=lg') {
+			&:nth-child(odd) {
+				grid-column: 1 / span 5;
+			}
+
+			&:nth-child(even) {
+				grid-column: 8 / span 5;
+			}	
+		}
+
+		.c-case-study__image {
+			margin-bottom: 24px;
+
+			img {
+				display: block;
+			}
+		}
+
+		.c-case-study__title {
+			margin-bottom: 16px;
+		}
+	}
+}

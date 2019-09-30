@@ -1,0 +1,31 @@
+<header>
+	<nav id="main-nav" class="l-main-nav is-closed {% if page.id == 'about' or page.id == 'clothparency' %}l-main-nav--transparent-white {% endif %}" class="js-toggle-nav">
+		<div class="l-container">
+			<div class="l-grid">
+				<div class="l-main-nav__logo">
+					<a href="/">Jonas Brinkhoff</a>
+				</div>
+
+				<div class="l-main-nav__toggle-nav">
+					<a onclick="toggleMobileMainNav()">
+						<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				            <path id="ic-menu" d="M3,18 L21,18 L21,16 L3,16 L3,18 Z M3,13 L21,13 L21,11 L3,11 L3,13 Z M3,6 L3,8 L21,8 L21,6 L3,6 Z" id="Shape" fill-opacity="0.68" fill="#000000" fill-rule="nonzero"></path>
+						</svg>
+					</a>
+				</div>
+
+				<ul class="l-main-nav__list">
+					<li class="l-main-nav__list-item">
+						<a href="/#work">Work</a>
+					</li>
+					<li class="l-main-nav__list-item">
+						<a href="/about">About</a>
+					</li>
+					<li class="l-main-nav__list-item">
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>

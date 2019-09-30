@@ -1,0 +1,52 @@
+.c-related-case-studies {
+	padding: 128px 0;
+	text-align: center;
+
+	.c-related-case-studies__tagline {
+		margin-bottom: 16px;
+	}
+
+	.c-related-case-studies__headline {
+		margin-bottom: 96px;
+	}
+
+	.c-related-case-study {
+		text-align: left;
+
+		@include grid-column(span 12, span 6, span 6, span 6);
+
+		@include media('<=sm') {
+			&:first-of-type {
+				margin-bottom: 64px;
+			}
+		}
+
+		@include media('md') {
+			&:first-of-type {
+				margin-right: 16px;
+			}
+
+			&:last-of-type {
+				margin-left: 16px;
+			}
+		}
+
+		@include media('>=lg') {
+			&:first-of-type {
+				margin-right: 32px;
+			}
+
+			&:last-of-type {
+				margin-left: 32px;
+			}
+		}
+
+		.c-related-case-study__image {
+			margin-bottom: 24px;
+		}
+
+		.c-related-case-study__title {
+			margin-bottom: 16px;
+		}
+	}
+}

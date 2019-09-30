@@ -1,0 +1,9 @@
+.l-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column-gap: 32px;
+
+	@include media('<=sm') {
+		grid-column-gap: 16px;
+	}
+}

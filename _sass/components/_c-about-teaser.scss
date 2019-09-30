@@ -1,0 +1,16 @@
+.c-about-teaser {
+	padding: 192px 0;
+
+	@include media('<=sm') {
+		padding: 160px 0;
+	}
+
+	.c-about-teaser__tagline {
+		margin-bottom: 16px;
+	}
+
+	.c-about-teaser__body {
+		margin-bottom: 64px;
+		max-width: 736px;
+	}
+}
