@@ -17,6 +17,9 @@
 		&.has-shadow {
 			box-shadow: 0px 2px 4px rgba(0,0,0,0.08);
 		}
+		&.has-border-radius {
+			border-radius: 4px;
+		}
 	}
 
 	ul {

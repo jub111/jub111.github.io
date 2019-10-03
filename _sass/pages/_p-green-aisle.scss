@@ -1,6 +1,11 @@
 #p-green-aisle.c-case-study {
+
+	$background-color: #F5FAF7;
+	$accent-color: #57A372;
+	$border-color: #CDE5D5;
+
 	.c-section--with-background {
-		background-color: #F5FAF7;
+		background-color: $background-color;
 	}
 	
 	.c-image-cover {
@@ -21,7 +26,7 @@
 	}
 
 	.c-quote {
-		background-color: #57A372;
+		background-color: $accent-color;
 
 		.c-quote__author {
 			border-top-color: rgba(255, 255, 255, 0.1);
@@ -41,17 +46,17 @@
 	.l-table__head,
 	.l-table__row,
 	.c-images__head {
-		border-bottom-color: #CDE5D5;
+		border-bottom-color: $border-color;
 	}
 
 	.c-feature__text {
-		border-top-color: #CDE5D5;	
+		border-top-color: $border-color;	
 	}
 
 	.l-table__head span,
 	.c-table__numbered-list__number span,
 	.c-images__head,
 	.c-feature__text {
-		color: #57A372;
+		color: $accent-color;
 	}
 }
