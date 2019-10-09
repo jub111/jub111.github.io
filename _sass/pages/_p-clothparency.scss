@@ -53,7 +53,7 @@
 			);
 		}
 
-		@include media('lg') {
+		@include media('>=lg') {
 			background-image: 
 				-webkit-image-set(
 					url('../../assets/pages/case-studies/clothparency/cover-1440w@1x.jpg') 1x,
